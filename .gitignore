@@ -7,3 +7,5 @@ database.json
 session/
 *.log
 config.json
+*.har
+*.bak

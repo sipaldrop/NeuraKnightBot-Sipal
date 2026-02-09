@@ -1,10 +1,13 @@
-[
-    {
-        "token": "YOUR_TOKEN_HERE_1",
-        "proxy": "http://user:pass@ip:port"
-    },
-    {
-        "token": "YOUR_TOKEN_HERE_2",
-        "proxy": null
-    }
-]
+{
+    "captcha_api_key": "YOUR_CAPTCHA_KEY_HERE",
+    "accounts": [
+        {
+            "token": "YOUR_TOKEN_HERE_1",
+            "proxy": "http://user:pass@ip:port"
+        },
+        {
+            "token": "YOUR_TOKEN_HERE_2",
+            "proxy": null
+        }
+    ]
+}

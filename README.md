@@ -1,4 +1,4 @@
-# SIPAL NEURAKNIGHT V1.0 🤖
+# SIPAL NEURA-KNIGHTS V1.0
 
 ![Sipal-Airdrop](https://img.shields.io/badge/Sipal-Airdrop-blue) ![Version-1.0](https://img.shields.io/badge/Version-1.0-green) ![Node.js-18+](https://img.shields.io/badge/Node.js-18%2B-yellow)
 
@@ -16,11 +16,12 @@
 | Feature | Description | Status |
 | :--- | :--- | :---: |
 | **Auto Login** | Daily login & Token management | ✅ |
-| **Auto Battle** | Automated battles (Browser/API) | ✅ |
+| **Smart Battle** | Full API battle with map-completion logic | ✅ |
 | **Auto Tasks** | Complete social & daily tasks | ✅ |
-| **Auto Packs** | Automatically open card packs | ✅ |
+| **Auto Packs** | Claim & open card packs | ✅ |
 | **Multi-Account** | Support for multiple accounts via `accounts.json` | ✅ |
 | **Proxy Support** | Http/Socks proxy support per account | ✅ |
+| **Dashboard** | Live status table with execution logs | ✅ |
 
 ## Prerequisites
 
@@ -42,25 +43,27 @@
 
 ## Configuration
 
-1. **Create Configuration Files**:
-   Copy the template files to create your active configuration.
+1. **Setup Accounts**:
+   Copy the template and edit with your tokens:
    ```bash
    cp accounts_tmp.json accounts.json
-   cp config_tmp.json config.json
    ```
 
 2. **Setup Accounts (`accounts.json`)**:
    Edit `accounts.json` and add your formatted tokens and proxies.
    ```json
    [
-     {
-       "token": "eyJhbGciOi...",
-       "proxy": "http://user:pass@ip:port"
-     },
-     {
-       "token": "eyJhbGciOi...",
-       "proxy": null
-     }
+    "captcha_api_key": "YOUR_CAPTCHA_KEY_HERE",
+    "accounts": [
+        {
+            "token": "YOUR_TOKEN_HERE_1",
+            "proxy": "http://user:pass@ip:port"
+        },
+        {
+            "token": "YOUR_TOKEN_HERE_2",
+            "proxy": null
+        }
+    ]
    ]
    ```
 
@@ -87,7 +90,7 @@ You should see the Sipal Banner and the bot starting to process your accounts.
                \ /
 
     ======SIPAL AIRDROP======
-  =====SIPAL NEURA_KNIGHT V1.0=====
+  =====SIPAL NEURA-KNIGHTS V1.0=====
 ```
 
 ## License
